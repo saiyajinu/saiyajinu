@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
+import Navbar from "./containers/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Head>
+          <title>SaaS App Dark | A react next landing page</title>
+          <meta name="Description" content="React next landing page" />
+          <meta name="theme-color" content="#ec5555" />
+          {/* Load google fonts */}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        </Head>
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   );
 }
