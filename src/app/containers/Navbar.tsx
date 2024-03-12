@@ -24,7 +24,10 @@ const Navbar = () => {
     }
   }
 
-  window.addEventListener('scroll', changeScrolled)
+  if (typeof window !== "undefined") {
+    window.addEventListener('scroll', changeScrolled);
+  }
+  
 
   return (
     <>
@@ -45,8 +48,8 @@ const Navbar = () => {
         <div className='p-3'>
           <Logo title="Spacedev.codes" />
         </div>
-        <div className='p-3' onClick={openSidebar}>
-          <HamburgerIcon />
+        <div className='p-3'>
+          <HamburgerIcon onclick={openSidebar}/>
         </div>
       </div>
     </nav>
