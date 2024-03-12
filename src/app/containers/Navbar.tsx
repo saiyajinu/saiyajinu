@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className={`fixed top-0 left-0 w-[100%] transition-all ease delay-200 px-12 border-[1px] border-solid ${isScrolled ? 'border-secondary-200 border-b-[rgba(255,255,255,0.1)]' : 'border-transparent'} min-h-20 ${isScrolled ? 'bg-secondary-200' : 'bg-transparent' } z-50
+    <nav className={`fixed top-0 left-0 w-[100%] transition-all ease-linear px-12 border-[1px] border-solid ${isScrolled ? 'border-secondary-200 border-b-[rgba(255,255,255,0.1)]' : 'border-transparent'} min-h-20 ${isScrolled ? 'bg-secondary-200' : 'bg-transparent' } z-50
     ${isScrolled ? 'py-4' : 'py-5'}`}>
       <div className='hidden md:flex md:justify-between'>
         <div className='flex gap-8 p-3'>
@@ -39,7 +39,7 @@ const Navbar = () => {
           <NavLink to="section1" content='Section 1'/>
           <NavLink to="section2" content='Section 2'/>        
         </div>
-        <div className='bg-primary-focused py-3 px-6 rounded-3xl text-black pointer hover:bg-primary-hover transition-all ease delay-150 cursor-pointer font-medium'>
+        <div className='bg-primary-focused py-3 px-6 rounded-3xl text-black pointer hover:bg-primary-hover transition-all ease cursor-pointer font-medium'>
           Contact Us
         </div>
       </div>

@@ -13,6 +13,7 @@ const config: Config = {
       primary:{
         focused: '#15e49e',
         hover: '#11b57e',
+        background: "rgba(21, 228, 158, 0.16)"
       },
       secondary:{
         100: '#F3F4F6',

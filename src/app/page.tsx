@@ -3,6 +3,8 @@ import Hero from "@/app/containers/Hero";
 import Navbar from "@/app/containers/Navbar";
 import { Element } from 'react-scroll';
 import 'animate.css';
+import Offer from "./containers/Offer";
+import Footer from "./containers/Footer";
 
 
 
@@ -11,11 +13,12 @@ export default function Home() {
     <>
       <Navbar />
       <Element name="section1">
-        <Hero></Hero>
+        <Hero />
       </Element>
-      <Element name="section2" className="p-96 bg-primary-hover">
-        Home2222
+      <Element name="section2">
+        <Offer />
       </Element>
+      <Footer />
     </>
   );
 }

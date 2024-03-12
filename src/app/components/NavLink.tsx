@@ -13,7 +13,7 @@ const NavLink = (props : NavLinkProps) => {
     const hoverColor = props.hoverColor ? props.hoverColor : 'primary-focused';
 
   return (
-    <Link activeClass="is-current" to={props.to} spy={true} smooth={true} duration={500} className={`cursor-pointer text-${color} hover:text-${hoverColor} transition-all delay-150`}>
+    <Link activeClass="is-current" to={props.to} spy={true} smooth={true} duration={500} className={`cursor-pointer text-${color} hover:text-${hoverColor} transition-all`}>
         {props.content}
     </Link>
   )

@@ -17,11 +17,6 @@ body{
     font-weight: 400;
 }
 
-section{
-    position: relative;
-    padding-top: 240px;
-}
-
 .is-current {
     color: var(--tw-primary-focused);
 }
