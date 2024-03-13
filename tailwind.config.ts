@@ -33,12 +33,25 @@ const config: Config = {
       },
       black: '#000000',
       white: '#ffffff',
+      orange: '#ff9b3e',
     },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      keyframes: {
+        shake: {
+          '16%': { transform: 'skew(-14deg)' },
+          '33%': { transform: 'skew(12deg)' },
+          '49%': { transform: 'skew(-8deg)' },
+          '66%': { transform: 'skew(6deg)' },
+          '83%': { transform: 'skew(-4deg)' },
+        },
+      },
+      animation: {
+        shakeAnim: 'shake 600ms ease-in-out',
       },
     },
   },

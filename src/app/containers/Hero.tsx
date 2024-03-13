@@ -11,7 +11,7 @@ const Hero = () => {
     image={dashboard} 
     alt="dashboard"
     >
-      <div className="text-center mt-8">
+      <div className="text-center lg:mt-8">
         <p className="my-16 font-semibold text-gray-500 leading-8 text-md sm:text-lg md:text-xl lg:text-2xl w-3/4 mx-auto">
           Simplified scheduling for more than 200,000 customers
         </p>

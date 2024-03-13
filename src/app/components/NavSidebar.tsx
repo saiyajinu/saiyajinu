@@ -18,6 +18,7 @@ const NavSidebar = (props : NavSidebarProps ) => {
       <div className='flex flex-col gap-4 mt-8'>
         <NavLink to="section1" content='Section 1' color='black'/>
         <NavLink to="section2" content='Section 2' color='black'/>
+        <NavLink to="section3" content='Section 3' color='black'/>  
       </div>
     </div>
     {

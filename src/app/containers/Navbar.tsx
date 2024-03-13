@@ -37,7 +37,8 @@ const Navbar = () => {
         <div className='flex gap-8 p-3'>
           <Logo title="Spacedev.codes" />
           <NavLink to="section1" content='Section 1'/>
-          <NavLink to="section2" content='Section 2'/>        
+          <NavLink to="section2" content='Section 2'/>    
+          <NavLink to="section3" content='Section 3'/>    
         </div>
         <div className='bg-primary-focused py-3 px-6 rounded-3xl text-black pointer hover:bg-primary-hover transition-all ease cursor-pointer font-medium'>
           Contact Us

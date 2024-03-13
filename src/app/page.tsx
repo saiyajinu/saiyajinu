@@ -5,6 +5,7 @@ import { Element } from 'react-scroll';
 import 'animate.css';
 import Offer from "./containers/Offer";
 import Footer from "./containers/Footer";
+import Monitoring from "./containers/Monitoring";
 
 
 
@@ -17,6 +18,9 @@ export default function Home() {
       </Element>
       <Element name="section2">
         <Offer />
+      </Element>
+      <Element name="section3">
+        <Monitoring />
       </Element>
       <Footer />
     </>
