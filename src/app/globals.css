@@ -35,10 +35,12 @@ body{
 }
 
 *{
+    -webkit-font-smoothing: antialiased;
     color: white;
     font-weight: 400;
+    text-shadow: rgba(0, 0, 0, 0.004) 1px 1px 1px;
 }
 
 .is-current {
-    color: var(--tw-primary-focused);
+  color: var(--tw-primary-focused);
 }

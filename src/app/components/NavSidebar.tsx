@@ -9,7 +9,7 @@ interface NavSidebarProps {
 const NavSidebar = (props : NavSidebarProps ) => {
   return (
     <>
-    <div className={`fixed w-64 h-screen bg-white transition-all duration-500 p-4 ${props.sidebarOffset == '72' ? '-right-72' : 'right-0'} z-50`}>
+    <div className={`fixed w-64 min-h-screen bg-white transition-all duration-500 p-4 top-0 ${props.sidebarOffset == '72' ? '-right-72' : 'right-0'} z-50`}>
         <button className="absolute top-4 right-4" onClick={props.closeSidebar}>
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="black">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
