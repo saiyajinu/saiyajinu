@@ -2,6 +2,7 @@ import React from 'react'
 import {footer} from '../../common/data/index'
 import FooterWidget from '../components/FooterWidget'
 import FooterContact from '../components/FooterContact'
+import FooterP from '../components/FooterP'
 
 const Footer = () => {
   return (
@@ -14,7 +15,7 @@ const Footer = () => {
                 {
                   widget.list.map((item) => {
                     return (
-                      <p className='text-gray-300 cursor-pointer hover:text-white transition-colors ease-linear text-sm' key={item.id}>{item.title}</p>
+                      <FooterP text={item.title} key={item.id} />
                     )
                   })
                 }
