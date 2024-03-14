@@ -44,7 +44,7 @@ const Carousel = () => {
     <Slider {...settings} className='w-4/5 mx-auto'>
       {clients.map((client, i) => (
               <Fragment key={i}>          
-                  <Image src={client} alt="logo" />
+                  <Image src={client} alt="logo"/>
               </Fragment>
             ))}
     </Slider>
