@@ -34,6 +34,7 @@ const config: Config = {
       black: '#000000',
       white: '#ffffff',
       orange: '#ff9b3e',
+      posts: '#262626',
     },
     extend: {
       screens: {

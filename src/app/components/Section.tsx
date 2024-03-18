@@ -8,7 +8,7 @@ const caveat = Caveat({ subsets: ["latin"] });
 interface SectionProps {
   landing: boolean;
   title: string;
-  description: string;
+  description?: string;
   subtitle?: string;
   image?: StaticImageData;
   alt?: string;
@@ -21,7 +21,7 @@ const Section = (props: SectionProps) => {
       className={`z-0 relative pt-12 sm:pt-24 mx-auto ${props.landing ? "mt-16" : ""}`}
     >
       {props.subtitle ? (
-        <SectionSubtitle subtitle={props.subtitle} />
+        <SectionSubtitle subtitle={props.subtitle} side={false}/>
       ) : null}
       <div>
         <div
@@ -32,7 +32,9 @@ const Section = (props: SectionProps) => {
           }`}
         >
           <SectionTitle title={props.title} landing={props.landing} />
-          <SectionDescription description={props.description} />
+          {
+            props.description ? <SectionDescription description={props.description} /> : null
+          }
         </div>
         {props.image && props.alt && (
           <div className="grid mt-12 mx-8 h-auto relative text-center z-10 md:mt-14 md:max-w-xl md:mx-auto lg:max-w-2xl lg:mt-12 xl:max-w-4xl 2xl:max-w-[90%]">

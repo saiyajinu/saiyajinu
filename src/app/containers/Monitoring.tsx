@@ -19,7 +19,7 @@ const monitoringFeatures = [
     id: 2,
     icon: headphone,
     title: "Communication Speedy",
-    description: `Stay on top of your task lists and stay in touch with what's happening and what’s out.`,
+    description: `Stay on top of your task lists and stay in touch with what's happening and what\'s out.`,
   },
 ];
 
@@ -31,19 +31,19 @@ const Monitoring = () => {
       subtitle="File System Tracking"
       description="Pick one of our stock themes, or create your custom theme with the most advanced theme editor on any online survey building tool with the new experience templates."
     >
-      <div className="m-auto relative w-4/5 md:w-2/5 mb-32 lg:mb-0 lg:pb-48">
+      <div className="m-auto relative w-4/5 lg:w-2/5 mb-32 lg:mb-0 lg:pb-48">
         <Fade direction="up" triggerOnce>
           <Image
             src={report1}
             alt="report1"
-            className="h-auto w-11/12"
+            className="h-auto"
           />
         </Fade>
         <Fade direction="up" triggerOnce delay={400}>
           <Image
             src={report2}
             alt="report2"
-            className="absolute -bottom-24 -right-2 sm:-right-12 h-auto w-1/2 max-w-56 sm:max-w-64"
+            className="absolute -bottom-24 -right-2 sm:-right-12 h-auto w-1/2 max-w-56 sm:max-w-96"
           />
         </Fade>
       </div>

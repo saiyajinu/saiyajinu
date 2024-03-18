@@ -7,6 +7,8 @@ import Offer from "./containers/Offer";
 import Footer from "./containers/Footer";
 import Monitoring from "./containers/Monitoring";
 import Stats from "./containers/Stats";
+import SellingPoints from "./containers/SellingPoints";
+import Testimonials from "./containers/Testimonials";
 
 
 
@@ -26,6 +28,8 @@ export default function Home() {
       <Element name="section4">
         <Stats />
       </Element>
+      <SellingPoints />
+      <Testimonials />
       <Footer />
     </>
   );

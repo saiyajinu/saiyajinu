@@ -44,3 +44,17 @@ body{
 .is-current {
   color: var(--tw-primary-focused);
 }
+
+.slick-dots li{
+  margin: 0 1px !important;
+}
+
+.slick-dots li button:before{
+  content: '';
+  background-color: #15e49e;
+  color: transparent !important;
+  transition: all 0.3s ease-in-out 0s;
+  width: 12px !important;
+  height: 8px !important;
+  @apply rounded-full;
+}
