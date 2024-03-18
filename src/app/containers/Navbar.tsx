@@ -4,6 +4,7 @@ import Logo from "../components/Logo";
 import NavLink from "../components/NavLink";
 import NavSidebar from "../components/NavSidebar";
 import HamburgerIcon from "../components/HamburgerIcon";
+import NavAllLinks from "../components/NavAllLinks";
 
 const Navbar = () => {
   const [sidebarOffset, setSidebarOffset] = useState("72");
@@ -46,9 +47,7 @@ const Navbar = () => {
         <div className="hidden md:flex md:justify-between">
           <div className="flex gap-8 p-3">
             <Logo title="Spacedev.codes" />
-            <NavLink to="section1" content="Section 1" />
-            <NavLink to="section2" content="Section 2" />
-            <NavLink to="section3" content="Section 3" />
+            <NavAllLinks />
           </div>
           <div className="bg-primary-focused py-3 px-6 rounded-3xl text-black pointer hover:bg-primary-hover transition-all ease cursor-pointer font-medium">
             Contact Us

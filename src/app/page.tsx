@@ -6,6 +6,7 @@ import 'animate.css';
 import Offer from "./containers/Offer";
 import Footer from "./containers/Footer";
 import Monitoring from "./containers/Monitoring";
+import Stats from "./containers/Stats";
 
 
 
@@ -21,6 +22,9 @@ export default function Home() {
       </Element>
       <Element name="section3">
         <Monitoring />
+      </Element>
+      <Element name="section4">
+        <Stats />
       </Element>
       <Footer />
     </>

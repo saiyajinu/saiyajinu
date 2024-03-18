@@ -25,25 +25,29 @@ const monitoringFeatures = [
 
 const Monitoring = () => {
   return (
-    <div className="flex flex-wrap-reverse flex-row pt-16">
-      <div className="sm:max-w-lg my-auto mx-auto relative w-max ">
+    <SideSection
+      reverseWrap={true}
+      title="Advanced analytics tools to keep you in control"
+      subtitle="File System Tracking"
+      description="Pick one of our stock themes, or create your custom theme with the most advanced theme editor on any online survey building tool with the new experience templates."
+    >
+      <div className="m-auto relative w-4/5 md:w-2/5 mb-32 lg:mb-0 lg:pb-48">
         <Fade direction="up" triggerOnce>
-          <Image src={report1} alt="report1" className="max-w-96 md:max-w-sm h-auto" />
+          <Image
+            src={report1}
+            alt="report1"
+            className="h-auto w-11/12"
+          />
         </Fade>
         <Fade direction="up" triggerOnce delay={400}>
           <Image
             src={report2}
             alt="report2"
-            className="absolute -bottom-24 -right-2 sm:-right-12 h-auto max-w-56 sm:max-w-64"
+            className="absolute -bottom-24 -right-2 sm:-right-12 h-auto w-1/2 max-w-56 sm:max-w-64"
           />
         </Fade>
       </div>
-      <SideSection
-        title="Advanced analytics tools to keep you in control"
-        subtitle="File System Tracking"
-        description="Pick one of our stock themes, or create your custom theme with the most advanced theme editor on any online survey building tool with the new experience templates."
-      >
-        <div className="flex flex-row flex-wrap lg:flex-col">
+      <div className="flex flex-col sm:flex-row lg:flex-col gap-2">
         {monitoringFeatures.map((feature) => {
           return (
             <MonitoringItem
@@ -54,10 +58,8 @@ const Monitoring = () => {
             />
           );
         })}
-        </div>
-        
-      </SideSection>
-    </div>
+      </div>
+    </SideSection>
   );
 };
 

@@ -36,6 +36,9 @@ const config: Config = {
       orange: '#ff9b3e',
     },
     extend: {
+      screens: {
+        'smlr': '360px',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
