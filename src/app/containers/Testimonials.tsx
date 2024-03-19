@@ -34,7 +34,7 @@ const settings = {
 const Testimonials = () => {
   return (
     <Section title="What our clients say about us" landing={false} subtitle='Testimonials'>
-        <Slider {...settings} className='w-4/5 mx-auto'>
+        <Slider {...settings} className='w-4/5 mx-auto mt-10'>
             <TestimonialsPost />
             <TestimonialsPost />
             <TestimonialsPost />

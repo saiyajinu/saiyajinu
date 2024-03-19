@@ -16,8 +16,8 @@ const SideSection = (props: SideSectionProps) => {
   const childrenArray = React.Children.toArray(props.children);
 
   // Access the first and second children, if they exist.
-  const sideChild = childrenArray[0];
-  const insideChild = childrenArray.length > 1 ? childrenArray[1] : null;
+  const sideChild = childrenArray[0];                                     // First child is the one that goes on the side.
+  const insideChild = childrenArray.length > 1 ? childrenArray[1] : null; // Second child is the one that goes inside.
 
   return (
     <section

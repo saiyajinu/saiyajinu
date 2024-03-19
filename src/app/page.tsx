@@ -9,6 +9,8 @@ import Monitoring from "./containers/Monitoring";
 import Stats from "./containers/Stats";
 import SellingPoints from "./containers/SellingPoints";
 import Testimonials from "./containers/Testimonials";
+import Blog from "./containers/Blog";
+import Contact from "./containers/Contact";
 
 
 
@@ -30,6 +32,8 @@ export default function Home() {
       </Element>
       <SellingPoints />
       <Testimonials />
+      <Blog />
+      <Contact />
       <Footer />
     </>
   );

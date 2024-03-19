@@ -38,7 +38,7 @@ const config: Config = {
     },
     extend: {
       screens: {
-        'smlr': '360px',
+        'smlr': '380px',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
