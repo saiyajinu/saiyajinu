@@ -1,0 +1,4 @@
+npm run build
+pm2 stop website
+pm2 start npm --name "website" -- start
+pm2 save
