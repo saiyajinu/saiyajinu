@@ -7,16 +7,16 @@ import SellingPointsPost from "../components/SellingPointsPost";
 const SellingPoints = () => {
   return (
     <Section
-      title="Grain is an essential part of your daily workflow."
-      subtitle="Key selling points"
-      description="Pick one of our stock themes, or create your custom theme with the most advanced theme editor on any online survey building tool. Create professional ads."
+      title="Optimizing Management and Traceability for Seamless Operations."
+      subtitle="Key Selling Points"
+      description="Leverage our cutting-edge solutions to streamline management and enhance traceability. Monitor your entire operation in real-time and make data-driven decisions with our comprehensive platform."
       landing={false}
     >
         <Image src={dashboard} alt="dashboard" className="mx-auto w-8/12 my-4"/>
         <div className="flex flex-row flex-wrap justify-center items-center gap-12 mt-8">
-            <SellingPointsPost title="1-month Free Trial" description="We are open for trial sessions"/>
-            <SellingPointsPost title="1-month Free Trial" description="We are open for trial sessions"/>
-            <SellingPointsPost title="1-month Free Trial" description="We are open for trial sessions"/>
+            <SellingPointsPost title="Enhanced Traceability" description="Track your products."/>
+            <SellingPointsPost title="Real-Time Monitoring" description="Watch your operation live."/>
+            <SellingPointsPost title="Custom Integrations" description="Make it fit your needs."/>
         </div>
     </Section>
   );

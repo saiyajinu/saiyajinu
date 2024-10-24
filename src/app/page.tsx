@@ -30,10 +30,14 @@ export default function Home() {
       <Element name="section4">
         <Stats />
       </Element>
-      <SellingPoints />
-      <Testimonials />
-      <Blog />
-      <Contact />
+      <Element name="selling-points">
+        <SellingPoints />
+      </Element>
+      {/* <Testimonials /> */}
+      {/* <Blog /> */}
+      <Element name="contact">
+        <Contact />
+      </Element>
       <Footer />
     </>
   );

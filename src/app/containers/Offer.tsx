@@ -6,8 +6,8 @@ const Offer = () => {
   return (
     <Section
     landing={false}
-    title="Choose dashboard for every stage of your customer journey"
-    description="The rise of mobile devices transforms the way we consume information entirely and the world's most relevant channels such as Facebook and Instagram are almost exclusively used on mobile"
+    title="Key Features of Our Applications"
+    description="Discover our suite of powerful tools that streamline operations, enhance visibility, and drive efficiency across your entire business ecosystem."
     >
       <OfferGrid/>
     </Section>

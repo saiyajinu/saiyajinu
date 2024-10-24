@@ -88,7 +88,7 @@ const ContactForm = () => {
           value={formData.message}
           onChange={handleChange}
         />
-        <Button type="submit" variant="outlined">
+        <Button type="submit" variant="outlined" disabled={true}>
           Submit
         </Button>
       </Box>

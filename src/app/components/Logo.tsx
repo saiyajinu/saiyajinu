@@ -1,11 +1,11 @@
 import Link from "next/link";
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import { animateScroll as scroll} from "react-scroll";
 
 interface LogoProps {
   logoSrc?: {
-    src: string;
-    width: number;
+    src: StaticImageData;
+    width?: number;
     height: number;
   };
   title: string;

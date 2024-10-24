@@ -6,6 +6,8 @@ import Image from 'next/image';
 import { clients } from '../../common/data/index';
 import { Fragment } from 'react';
 
+import { techStack } from '../../common/data/index';
+
 const settings = {
   infinite: true,
   slidesToShow: 5,
@@ -42,9 +44,9 @@ const settings = {
 const Carousel = () => {
   return (
     <Slider {...settings} className='w-4/5 mx-auto'>
-      {clients.map((client, i) => (
+      {techStack.map((tech, i) => (
               <Fragment key={i}>          
-                  <Image src={client} alt="logo"/>
+                  <Image src={tech.src} alt="logo" height={tech.height} style={{margin: '0 auto'}}/>
               </Fragment>
             ))}
     </Slider>

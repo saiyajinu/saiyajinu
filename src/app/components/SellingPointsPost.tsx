@@ -7,7 +7,7 @@ interface SellingPointsPostProps {
 
 const SellingPointsPost = (props : SellingPointsPostProps) => {
   return (
-    <div className="flex flex-row justify-center items-center">
+    <div className="flex flex-row justify-center items-center max-w-80">
       <svg
         width="25"
         height="19"

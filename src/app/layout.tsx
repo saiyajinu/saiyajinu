@@ -6,10 +6,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
-  title: "Spacedev.codes",
+  title: "Space Dev",
   description: "Spacedev.codes spacedev.codes spacedev.codes",
   keywords: "spacedev.codes",
-  icons: "./favicon.ico",
+  icons: "./icon.ico",
 };
 
 export default function RootLayout({

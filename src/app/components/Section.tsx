@@ -37,7 +37,7 @@ const Section = (props: SectionProps) => {
           }
         </div>
         {props.image && props.alt && (
-          <div className="grid mt-12 mx-8 h-auto relative text-center z-10 md:mt-14 md:max-w-xl md:mx-auto lg:max-w-2xl lg:mt-12 xl:max-w-4xl 2xl:max-w-[90%]">
+          <div className="flex justify-center mt-12 mx-8 h-auto relative text-center z-10 md:mt-14 md:max-w-xl md:mx-auto lg:max-w-2xl lg:mt-12 xl:max-w-4xl 2xl:max-w-[75%]">
             <Image src={props.image} alt={props.alt} priority={props.landing ? true : undefined}/>
           </div>
         )}

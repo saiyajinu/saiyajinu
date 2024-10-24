@@ -5,7 +5,18 @@ import geekwire from '../assets/clients/geekwire.png';
 import slack from '../assets/clients/slack.png';
 import usaToday from '../assets/clients/usa-today.png';
 
+import angular from '../assets/tech-stack/angular.png';
+import nestjs from '../assets/tech-stack/nestjs.png';
+import nodejs from '../assets/tech-stack/nodejs.png';
+import socketio from '../assets/tech-stack/socketio.png';
+import stripe from '../assets/tech-stack/stripe.png';
+import mongodb from '../assets/tech-stack/mongodb.png';
+
+// import angular-js from '../assets/tech-stack/angular-js-lockup.svg'
+
 export const clients = [envato, evernote, forbes, geekwire, slack, usaToday];
+
+export const techStack = [{src: angular, height: 50}, {src: nestjs, height: 50}, {src: nodejs, height: 50}, {src: socketio, height: 50}, {src: stripe, height: 50}, {src: mongodb, height: 50}];
 
 export const footer = {
     about: {
@@ -37,11 +48,6 @@ export const footer = {
             title: 'Copyright',
             link: '#',
           },
-          {
-            id: 5,
-            title: 'Popular Campaign',
-            link: '#',
-          },
         ],
       },
       {
@@ -68,49 +74,13 @@ export const footer = {
             title: 'Site Map',
             link: '#',
           },
-          {
-            id: 5,
-            title: 'Store Hours',
-            link: '#',
-          },
-        ],
-      },
-      {
-        id: 4,
-        title: 'My Account',
-        list: [
-          {
-            id: 1,
-            title: 'Press inquiries',
-            link: '#',
-          },
-          {
-            id: 2,
-            title: 'Social media ',
-            link: '#',
-          },
-          {
-            id: 3,
-            title: 'directories',
-            link: '#',
-          },
-          {
-            id: 4,
-            title: 'Images & B-roll',
-            link: '#',
-          },
-          {
-            id: 5,
-            title: 'Permissions',
-            link: '#',
-          },
         ],
       },
     ],
     contactInfo: {
       title: 'Contact info',
-      address: `Amsterdam, Netherlands`,
-      phone: `+31 62 19 22 705`,
+      address: `Bucharest, Romania`,
+      phone: `+40 740 123 456`,
       openingTime: `7 Days - 8am - 10pm`,
       email: `info@redqteam.com`,
     },

@@ -5,6 +5,7 @@ import NavLink from "../components/NavLink";
 import NavSidebar from "../components/NavSidebar";
 import HamburgerIcon from "../components/HamburgerIcon";
 import NavAllLinks from "../components/NavAllLinks";
+import logo from "../../common/assets/icons/logo_invert.png";
 
 const Navbar = () => {
   const [sidebarOffset, setSidebarOffset] = useState("72");
@@ -44,9 +45,9 @@ const Navbar = () => {
         } min-h-20 ${isScrolled ? "bg-secondary-200" : "bg-transparent"} z-40
     ${isScrolled ? "py-4" : "py-5"}`}
       >
-        <div className="hidden md:flex md:justify-between">
+        <div className="hidden lg:flex lg:justify-between">
           <div className="flex gap-8 p-3">
-            <Logo title="Spacedev.codes" />
+            <Logo logoSrc={{src: logo, height: 24}} title="Spacedev.codes" />
             <NavAllLinks />
           </div>
           <div className="bg-primary-focused py-3 px-6 rounded-3xl text-black pointer hover:bg-primary-hover transition-all ease cursor-pointer font-medium">
@@ -54,9 +55,9 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex justify-between md:hidden">
+        <div className="flex justify-between lg:hidden">
           <div className="p-3">
-            <Logo title="Spacedev.codes" />
+            <Logo logoSrc={{src: logo, height: 24}} title="Spacedev.codes" />
           </div>
           <div className="p-3">
             <HamburgerIcon onclick={openSidebar} />

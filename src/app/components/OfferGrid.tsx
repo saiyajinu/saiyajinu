@@ -1,35 +1,35 @@
 import OfferItem from "./OfferItem"
-import service1 from "../../common/assets/icons/service1.svg"
-import service2 from "../../common/assets/icons/service2.svg"
-import service3 from "../../common/assets/icons/service3.svg"
-import service4 from "../../common/assets/icons/service4.svg"
-import service5 from "../../common/assets/icons/service5.svg"
+import support from "../../common/assets/icons/support.svg"
+import efficacy from "../../common/assets/icons/efficacy.svg"
+import traceability from "../../common/assets/icons/traceability.svg"
+import optimisation from "../../common/assets/icons/optimisation.svg"
+import feeCollection from "../../common/assets/icons/fee-collection.svg"
 
-const services = [
+const keyFeatures = [
     {
       id: 1,
-      title: 'Fast Performance',
-      icon: service1,
+      title: 'Efficient Management',
+      icon: efficacy,
     },
     {
       id: 2,
-      title: 'User Customization',
-      icon: service2,
+      title: 'Full Traceability',
+      icon: traceability,
     },
     {
       id: 3,
-      title: 'Modify structure',
-      icon: service3,
+      title: 'Optimized Operations',
+      icon: optimisation,
     },
     {
       id: 4,
-      title: 'Customer Analysis',
-      icon: service4,
+      title: 'Fee Collection',
+      icon: feeCollection,
     },
     {
       id: 5,
       title: 'Instant Support',
-      icon: service5,
+      icon: support,
     },
   ];
 
@@ -39,8 +39,8 @@ const OfferGrid = () => {
   return (
     <div className="mt-8 max-w-[600px] lg:max-w-5xl mx-auto place-items-center flex-wrap flex-row flex justify-center items-center gap-12">
         {
-            services.map((service) => {
-                return <OfferItem title={service.title} icon={service.icon} key={service.id}/>
+            keyFeatures.map((feature) => {
+                return <OfferItem title={feature.title} icon={feature.icon} key={feature.id}/>
             })
         }
     </div>
